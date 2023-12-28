@@ -1,0 +1,17 @@
+@keyframes colorChange {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: #e3d40a;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+.yellowlove {
+    animation: colorChange 0.5s infinite;
+}
