@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Label, Input, Button, Video } from 'flowbite-svelte';
-	import { onMount } from 'svelte';
 	let showThala = false;
 	let showReason = false;
 	let song: HTMLAudioElement | null = null;
@@ -64,7 +63,7 @@
 </script>
 
 <div class="{showReason ? 'yellowlove' : ''} mb-6 h-screen p-12 font-mono">
-	<p class="p-8 text-9xl dark:text-white">Why is he Thala?🏏🦁</p>
+	<p class="p-8 text-4xl md:text-9xl dark:text-white">Why is he Thala?🏏🦁</p>
 	<Label for="input-group-1" class="mb-2 block">Enter a number</Label>
 	<Input
 		on:keyup={showAngryThala}
@@ -75,8 +74,8 @@
 	></Input>
 	<Button class="my-8 w-full " color="yellow" on:click={generateFormula}>Get Reason 🏏🦁</Button>
 	{#if showReason}
-		<p class="text-9xl dark:text-white">{formulaUsed}🏏🦁</p>
-		<p class="text-6xl dark:text-white">Thala for a Reason!💛🏏🦁</p>
+		<p class="text-4xl md:text-9xl dark:text-white">{formulaUsed}🏏🦁</p>
+		<p class="text-3xl md:text-6xl dark:text-white">Thala for a Reason!💛🏏🦁</p>
 	{/if}
 	{#if showThala}
 		<Video class="w-200 m-auto" src="/thala.mp4" autoplay controls></Video>
