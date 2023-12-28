@@ -39,7 +39,7 @@
 			const formula = thala_ka_reason_dede(inputNumber);
 			formulaUsed = formula;
 			song = new Audio('/surprise.mp3');
-			song.volume = 0.2;
+			song.volume = 1;
 			song.play();
 		} else {
 			showAngryThala();
